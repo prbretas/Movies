@@ -49,11 +49,11 @@ body {
   filter: drop-shadow(0 0 6px #FFF);
   border: 1px solid #a5a5a5;
   opacity: 1;
-
+  margin: 10px;
 }
 
 .film-card:not(:hover) {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .film-card__img {
@@ -271,7 +271,8 @@ body {
 
   .film-card {
     width: 18vw;
-    max-height: 600px;
+    margin: 15px;
+    
   }
 
   .film-card__img {
@@ -309,6 +310,9 @@ body {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .film-card:hover {
+    width: 65vw;
+  }
 
   .film-card__img {
     width: 180px;
@@ -328,6 +332,7 @@ body {
     max-height: 600px;
     width: 60vw;
   }
+
 
   .film-card__img {
     width: 400px;
