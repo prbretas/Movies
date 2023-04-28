@@ -1,244 +1,340 @@
 @import "./reset.css";
 
 body {
- 
-    background-image: linear-gradient(180deg, #000000 0%, #00133b 50%, #000000 100%);
-    padding-bottom: 100px;
+
+  background-image: linear-gradient(180deg, #000000 0%, #00133b 50%, #000000 100%);
+  padding-bottom: 100px;
 }
 
 /*------------------ DIV DOS FILMES ----------------------*/
 
 
-#titulo{
+#titulo {
   margin-top: 50px;
-      color: #fff;
-          text-align: center;
-  
+  color: #fff;
+  text-align: center;
+
+}
+
+
+
+.mainDiv {
+  padding: 0 15px;
+  max-width: 90vw;
+  margin: 50px auto;
+}
+
+.films {
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+}
+
+.film-card {
+  width: 20vw;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 5px 15px;
+  margin: 10px;
+  border-radius: 6px;
+  transition: 1s;
+}
+
+.film-card:hover {
+  scale: 1.1;
+  position: center;
+  filter: drop-shadow(0 0 6px #FFF);
+  border: 1px solid #a5a5a5;
+  opacity: 1;
+
+}
+
+.film-card:not(:hover) {
+  opacity: 0.1;
+}
+
+.film-card__img {
+  width: 200px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  transition: 0.5s;
+  filter: drop-shadow(0px 3px 3px rgb(122, 122, 122));
+}
+
+.film-card__img:hover {
+  scale: 1.1;
+}
+
+
+.film-card__title {
+  padding: 0 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.film-card__year {
+  margin-bottom: 5px;
+  color: rgb(5, 144, 243);
+  font-size: 14px;
+}
+
+.film-card__rate {
+  color: rgb(145, 142, 0);
+  font-size: 14px;
+}
+
+.film-card__description {
+  color: rgb(3, 3, 3);
+  padding: 0 5px 10px;
+  font-size: 14px;
+}
+
+.film-card__genre {
+  color: rgb(170, 170, 170);
+  padding: 0 5px 10px;
+  font-size: 14px;
+}
+
+.show-more {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+
+  border-radius: 6px;
+  background-color: rgb(16, 85, 205);
+  color: #fff;
+  transition: opacity 0.2s ease-in;
+}
+
+.show-more:hover {
+  opacity: 0.8;
+}
+
+/* CSS loader */
+
+.loader-wrapper {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid rgb(43, 146, 255);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
-  
-  .mainDiv {
-      padding: 0 15px;
-      max-width: 90vw;
-      margin: 50px auto;
+
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
-  
-  .films {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 30px;
-      row-gap: 30px;
-      margin-bottom: 30px;
-  
-   }
-  
-  .film-card {
-      width: 200px;
-      text-align: center;
-      background-color: rgb(255, 255, 255);
-      padding-bottom: 15px;
-      border-radius: 6px;
+
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
-  
-  .film-card:hover{
-      scale: 1.1;
-      filter: drop-shadow(0 0 10px #FFF);
-      transition: 1s;
+
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
-  
-  
-  
-  .film-card__img {
-      width: 200px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-  }
-  
-  .film-card__title {
-      padding: 0 5px;
-      margin-bottom: 5px;
-      font-weight: 700;
-      font-size: 16px;
-  }
-  
-  .film-card__year {
-      margin-bottom: 5px;
-      color: rgb(5, 144, 243);
-      font-size: 14px;
-  }
-  
-  .film-card__rate {
-      color: rgb(145, 142, 0);
-      font-size: 14px;
-  }
-  
-  .film-card__description {
-      color: rgb(3, 3, 3);
-      padding: 0 5px 10px ;
-      font-size: 14px;
-  }
-  
-  .film-card__genre {
-      color: rgb(170, 170, 170);
-      padding: 0 5px 10px ;
-      font-size: 14px;
-  }
-  .show-more {
-      display: block;
-      margin: 0 auto;
-      padding: 10px 30px;
-  
-      border-radius: 6px;
-      background-color: rgb(16, 85, 205);
-      color: #fff;
-      transition: opacity 0.2s ease-in;
-  }
-  
-  .show-more:hover {
-      opacity: 0.8;
-  }
-  
-  /* CSS loader */
-  
-  .loader-wrapper {
-      width: 100%;
-      padding: 100px 0;
-      text-align: center;
-  }
-  
-  .lds-ripple {
-      display: inline-block;
-      position: relative;
-      width: 80px;
-      height: 80px;
-  }
-  
-  .lds-ripple div {
-      position: absolute;
-      border: 4px solid rgb(43, 146, 255);
-      opacity: 1;
-      border-radius: 50%;
-      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  }
-  
-  .lds-ripple div:nth-child(2) {
-      animation-delay: -0.5s;
-  }
-  
-  @keyframes lds-ripple {
-      0% {
-          top: 36px;
-          left: 36px;
-          width: 0;
-          height: 0;
-          opacity: 0;
-      }
-  
-      4.9% {
-          top: 36px;
-          left: 36px;
-          width: 0;
-          height: 0;
-          opacity: 0;
-      }
-  
-      5% {
-          top: 36px;
-          left: 36px;
-          width: 0;
-          height: 0;
-          opacity: 1;
-      }
-  
-      100% {
-          top: 0px;
-          left: 0px;
-          width: 72px;
-          height: 72px;
-          opacity: 0;
-      }
-  }
+}
+
 /********************** BUTTON SHOW MORE **************************/
 .buttonDownload {
 
-    display: block;
-    margin: 0 auto;
-    padding: 10px 30px;
-    color: #fff;
-    transition: opacity 0.2s ease-in;
-    position: relative;
-    background-color: #1fb4b9;
-    font-family: sans-serif;
-    text-decoration: none;
-    font-size: 0.9em;
-    text-align: center;
-    text-indent: 15px;
-    border: none;
-    border-radius: 2em;
-    font-weight: bold;
-  }
-  
-  .buttonDownload:hover {
-    background-color: #1a60a2;
-    color: white;
-    filter: drop-shadow(0 0 5px  #76faff);
-    transition: 0.5s;
-  }
-  
-  .buttonDownload:before, .buttonDownload:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 52%;
-  }
-  
-  .buttonDownload:before {
-    width: 10px;
-    height: 2px;
-    border-style: solid;
-    border-width: 0 2px 2px;
-  }
-  
-  .buttonDownload:after {
-    width: 0;
-    height: 0;
-    margin-left: 3px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  color: #fff;
+  transition: opacity 0.2s ease-in;
+  position: relative;
+  background-color: #1fb4b9;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+  border: none;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+.buttonDownload:hover {
+  background-color: #1a60a2;
+  color: white;
+  filter: drop-shadow(0 0 5px #76faff);
+  transition: 0.5s;
+}
+
+.buttonDownload:before,
+.buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+}
+
+.buttonDownload:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 1s linear infinite;
+  animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+  border-color: #bdd3ef;
+}
+
+.buttonDownload:hover:after {
+  border-top-color: #eff1f7;
+  animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+  0% {
     margin-top: -7px;
-    border-style: solid;
-    border-width: 4px 4px 0 4px;
-    border-color: transparent;
-    border-top-color: inherit;
-    animation: downloadArrow 1s linear infinite;
-    animation-play-state: paused;
+    opacity: 1;
   }
-  
-  .buttonDownload:hover:before {
-    border-color: #bdd3ef;
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0.4;
   }
-  
-  .buttonDownload:hover:after {
-    border-top-color: #eff1f7;
-    animation-play-state: running;
+
+  50% {
+    opacity: 1;
   }
-  
-  @keyframes downloadArrow {
-    0% {
-      margin-top: -7px;
-      opacity: 1;
-    }
-  
-    0.001% {
-      margin-top: -15px;
-      opacity: 0.4;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    100% {
-      margin-top: 0;
-      opacity: 0.4;
-    }
+
+  100% {
+    margin-top: 0;
+    opacity: 0.4;
   }
-  
+}
+
+
+
+/*********************  MEDIA QUERY ***************/
+
+/*************************************************************************/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+  .film-card {
+    width: 18vw;
+    max-height: 600px;
+  }
+
+  .film-card__img {
+    width: 300px;
+  }
+
+  .film-card__img:hover {
+    scale: 1.1;
+  }
+
+}
+
+/*************************************************************************/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .film-card {
+    width: 30vw;
+    max-height: 600px;
+  }
+
+  .film-card__img {
+    width: 180px;
+  }
+
+  .film-card__img:hover {
+    scale: 1.2;
+  }
+
+}
+
+/*************************************************************************/
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .film-card {
+    max-height: 600px;
+    width: 60vw;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .film-card__img {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .film-card__img:hover {
+    scale: 1.5;
+  }
+
+}
+
+/*************************************************************************/
+@media all and (max-width: 480px) {
+  .film-card {
+    max-height: 600px;
+    width: 60vw;
+  }
+
+  .film-card__img {
+    width: 400px;
+
+  }
+
+  .film-card__img:hover {
+    scale: 1.4;
+  }
+}
