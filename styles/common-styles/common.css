@@ -45,11 +45,13 @@ background-color: rgb(0, 130, 153);
     color: #fff;
     padding: 5px 10px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .centerMenu li a:hover {
-    color: #ffe1bb;
-    text-decoration: 2px underline #ffae00;
+    color: #5ba8ff;
+    scale: 1.1;
+    text-decoration: 1px underline #00ccff;
     
 }
 
