@@ -41,6 +41,7 @@ body {
   margin: 10px;
   border-radius: 6px;
   transition: 1s;
+  opacity: 1;
 }
 
 .film-card:hover {
