@@ -78,16 +78,46 @@ h2, #titulo {
     
     
     /********************** TELA DO FILME **************************/
-    #iframe{
-        width: 90vw;
-        height: 80vh;
+    #divFilme {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    
+    }
+    
+    .capaFilme {
+        border: 2px solid white;
+        margin: 5px 10px;
+        min-width: 35px;
+        height: 40vh;
+        transition: 0.5s;
+        border-radius: 3px;
+    }
+    
+    .capaFilme:hover {
+        scale: 1.1;
+        filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    
+    }
+    
+    /********************** TELA DO FILME **************************/
+    #divTelaFilme {
+        margin: 30px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    #iframeFilme {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 85vw;
+        height: 92vh;
         border: 1px solid white;
     }
     
-    #divTela{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
     
-    
-    }

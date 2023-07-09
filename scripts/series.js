@@ -1,16 +1,53 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'e1b102a83cmsh4dc8f67441468fdp1aa584jsne71462f57968',
-		'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-	}
-};
 
-fetch('https://moviesdatabase.p.rapidapi.com/titles/x/titles-by-ids?idsList=tt0001702%2Ctt0001856%2Ctt0001856', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+let linkFilme1 = document.getElementById("linkFilme1")
+let linkFilme2 = document.getElementById("linkFilme2")
+let linkFilme3 = document.getElementById("linkFilme3")
+let linkFilme4 = document.getElementById("linkFilme4")
+let linkFilme5 = document.getElementById("linkFilme5")
+
+let sourceVideos = [];
+sourceVideos[0] = "https://embed.warezcdn.net/serie/tt0898266"; //BIG BANG THEORY
+sourceVideos[1] = "https://embed.warezcdn.net/serie/tt7631058"; //HOUSEOFDRAGON
+sourceVideos[2] = "https://embed.warezcdn.net/serie/tt11640018"; //LA BREA
+sourceVideos[3] = "https://embed.warezcdn.net/serie/tt15431326"; //HP CAMP CASAS
+sourceVideos[4] = "https://embed.warezcdn.net/serie/tt10234724"; //MOONKNIGHT
+sourceVideos[5] = "https://embed.warezcdn.net/serie/tt11198330"; //SPOTIFY
+sourceVideos[6] = "https://embed.warezcdn.net/serie/tt7631058"; //LORD OF THE RINS
+sourceVideos[7] = "https://embed.warezcdn.net/serie/tt0108778"; //FRIENDS
 
 
-    
+
+
+//ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
+let iframeFilme = document.getElementById("iframeFilme")
+
+
+function alterarLinkFilme0(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0898266")
+}
+function alterarLinkFilme1(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt11198330")
+}
+function alterarLinkFilme2(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt11640018")
+}
+function alterarLinkFilme3(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt15431326")
+}
+function alterarLinkFilme4(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt10234724")
+}
+function alterarLinkFilme5(){
+	iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt11564258")
+}
+function alterarLinkFilme6(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt7631058")
+}
+function alterarLinkFilme7(){
+    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0108778")
+}
+
+
+
+
 

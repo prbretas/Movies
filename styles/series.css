@@ -5,3 +5,48 @@ body {
     background-image: linear-gradient(180deg, #000000 0%, #00133b 50%, #000000 100%);
     padding-bottom: 100px;
 }
+
+#divFilme {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 10px;
+
+}
+
+.capaFilme {
+    border: 2px solid white;
+    margin: 5px 10px;
+    min-width: 40px;
+    height: 40vh;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.capaFilme:hover {
+    margin-top: 5px;
+    scale: 1.1;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+
+}
+
+/********************** TELA DO FILME **************************/
+#divTelaFilme {
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#iframeFilme {
+    background-image: url(../img/bgiframe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85vw;
+    height: 92vh;
+    border: 1px solid white;
+}
+
