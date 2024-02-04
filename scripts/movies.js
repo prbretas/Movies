@@ -4,8 +4,9 @@ let linkFilme3 = document.getElementById("linkFilme3");
 let linkFilme4 = document.getElementById("linkFilme4");
 let linkFilme5 = document.getElementById("linkFilme5");
 
+
 let sourceVideos = [];
-sourceVideos[0] = "https://embed.warezcdn.net/filme/tt0317219"; //CARROS
+sourceVideos[0] = "https://embedder.net/e/movie?imdb=tt0317219"; //CARROS
 sourceVideos[1] = "https://embed.warezcdn.net/filme/tt1216475"; //CARROS 2
 sourceVideos[2] = "https://embed.warezcdn.net/filme/tt1630029"; //AVATAR
 sourceVideos[3] = "https://embed.warezcdn.net/filme/tt2911666"; //JOHN WICK DE VOLTA AO JOGO
@@ -15,13 +16,15 @@ sourceVideos[6] = "https://embed.warezcdn.net/filme/tt10366206"; //BABA YAGA
 sourceVideos[7] = "https://embed.warezcdn.net/filme/tt2906216"; //DUNGEOSN DRAGONS
 sourceVideos[8] = "https://embed.warezcdn.net/filme/tt11145118"; //CREED 3
 sourceVideos[9] = "https://embed.warezcdn.net/filme/tt10151854"; //SHAZAM 2
-sourceVideos[10] = "https://embed.warezcdn.net/filme/tt5433140"; //VELOZES 10
+sourceVideos[10] = "https://embedder.net/e/movie?imdb=tt4630562"; //VELOZES 10
+sourceVideos[11] = "https://embedder.net/e/movie?imdb=tt6495056"; //PATOS
+
 
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
 let iframeFilme = document.getElementById("iframeFilme");
 
 function alterarLinkFilme0() {
-  iframeFilme.setAttribute("src", "https://embed.warezcdn.net/filme/tt0317219");
+  iframeFilme.setAttribute("src", "https://embedder.net/e/movie?imdb=tt0317219");
 }
 function alterarLinkFilme1() {
   iframeFilme.setAttribute("src", "https://embed.warezcdn.net/filme/tt1216475");
@@ -65,8 +68,13 @@ function alterarLinkFilme9() {
 function alterarLinkFilme10() {
   iframeFilme.setAttribute(
     "src",
-    "https://embed.warezcdn.net/filme/tt5433140"
+    "https://embedder.net/e/movie?imdb=tt4630562"
   );
 }
 
-F;
+function alterarLinkFilme11() {
+  iframeFilme.setAttribute(
+    "src",
+    "https://embedder.net/e/movie?imdb=tt6495056"
+  );
+}
