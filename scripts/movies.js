@@ -21,10 +21,7 @@ sourceVideos[12] = "https://embedder.net/e/tt15837338/"; //PATRULHA CANINA SUPER
 sourceVideos[13] = "https://embedder.net/e/tt28603694/"; //o porteiro
 sourceVideos[14] = "https://embedder.net/e/tt3291150/"; //MERCENARIOS 4
 sourceVideos[15] = "https://embedder.net/e/tt4495098"; //gran turismo
-
-
-
-
+sourceVideos[16] = "https://www.dailymotion.com/embed/video/x8k4iv6"; //WHEELY
 
 
 
@@ -32,23 +29,7 @@ sourceVideos[15] = "https://embedder.net/e/tt4495098"; //gran turismo
 https://embedder.net/e/tt3606752/     -   carros 3
 
 
-
-
-
-
 */
-
-
-
-
-
-
-
-
-
-
-
-
 
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
 let iframeFilme = document.getElementById("iframeFilme");
@@ -105,4 +86,8 @@ function alterarLinkFilme14() {
 
 function alterarLinkFilme15() {
   iframeFilme.setAttribute("src", sourceVideos[15]);
+}
+
+function alterarLinkFilme16() {
+  iframeFilme.setAttribute("src", sourceVideos[16]);
 }
