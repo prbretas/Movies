@@ -24,11 +24,8 @@ sourceVideos[15] = "https://embedder.net/e/tt4495098"; //gran turismo
 sourceVideos[16] = "https://www.dailymotion.com/embed/video/x8k4iv6"; //WHEELY
 
 
-
 /*
 https://embedder.net/e/tt3606752/     -   carros 3
-
-
 */
 
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO

@@ -112,6 +112,7 @@ h2, #titulo {
     }
     
     #iframeFilme {
+        background-image: url(../../img/bgiframe.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -119,5 +120,7 @@ h2, #titulo {
         height: 92vh;
         border: 1px solid white;
     }
+    
+    
     
     

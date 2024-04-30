@@ -1,0 +1,113 @@
+#iframePlutoTV, #iframeCanal{
+  background-image: url(../img/bgiframe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85vw;
+  height: 92vh;
+  border: 1px solid white;
+}
+
+#divBtn {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(9, 11, 8);
+  color: greenyellow;
+  border: 1px solid greenyellow;
+  border-radius: 30px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: 0.5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    border: 1px solid greenyellow;
+  transition-duration: 0.5s;
+  filter: drop-shadow(0 0 5px rgb(102, 255, 0));
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: 0.2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+.button svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  margin-left: 10px;
+  color: greenyellow;
+}
+
+.button:hover svg {
+    color: rgb(0, 0, 0);
+  }
+
+.button:focus svg {
+  animation: spin_357 0.5s linear;
+}
+
+.button:focus {
+   transition: 0.5s;
+   transform:translateY(5px);
+  }
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.canalBtn{
+    margin-bottom: 50px;
+    background-color: rgb(9, 11, 8);
+    color: greenyellow;
+    border: 1px solid greenyellow;
+
+}
+
+.canalBtn:hover {
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    border: 1px solid greenyellow;
+    transition-duration: 0.5s;
+  }
+
+  .canalBtn:focus {
+  }
