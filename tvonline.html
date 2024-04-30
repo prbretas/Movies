@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DEVMovies - FILMES</title>
     <link rel="stylesheet" href="./styles/movies.css" />
-    <link rel="stylesheet" href="./styles/tvonline.css">
+    <link rel="stylesheet" href="./styles/tvonline.css" />
     <link rel="stylesheet" href="./styles/common-styles/common.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,7 @@
           src="https://assets1.lottiefiles.com/packages/lf20_CTaizi.json"
           background="transparent"
           speed="1"
-          style="width: 80px; height: 80px"
+          class="lottieIcon"
           loop
           autoplay
         ></lottie-player>
@@ -43,7 +43,9 @@
           >
         </li>
         <li>
-          <a title="Assistir Filmes Online" class="hover2" href="./movies.html">Filmes</a>
+          <a title="Assistir Filmes Online" class="hover2" href="./movies.html"
+            >Filmes</a
+          >
         </li>
         <li>
           <a title="Assistir Séries Online" class="hover2" href="./series.html"
@@ -64,7 +66,7 @@
           >
         </li>
       </ul>
-      <form class="form-inline">
+      <!--<form class="form-inline">
         <input
           class="form-control mr-sm-2"
           type="search"
@@ -75,41 +77,38 @@
         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
           Pesquisar
         </button>
-      </form>
+      </form>-->
     </header>
     <h1 id="titulo">TV ONLINE - PLUTO TV</h1>
-    <p style="color:red">Utilize bloqueadores de anúncios.</p>
+    <p style="color: red">Utilize bloqueadores de anúncios.</p>
 
     <div id="divBtn">
-      <button class="button" id="plutoBtn" onclick="abrirPlutoTv()">
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-arrow-repeat"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
-        ></path>
-        <path
-          fill-rule="evenodd"
-          d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
-        ></path>
-      </svg>
-      Abrir PlutoTV
-     </button>
+      <a href="#iframePlutoTV" class="aBtn">
+        <button class="button" id="plutoBtn" onclick="abrirPlutoTv()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-repeat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+            ></path>
+          </svg>
+          Abrir PlutoTV
+        </button>
+      </a>
     </div>
 
     <div id="divFilme">
       <div id="divTelaFilme">
-        <iframe
-          id="iframePlutoTV"
-          src=""
-          frameborder="0"
-          allowfullscreen
-        >
+        <iframe id="iframePlutoTV" src="" frameborder="0" allowfullscreen style="background-image: url(./img/bg-plutotv.webp);">
         </iframe>
       </div>
     </div>
@@ -125,34 +124,41 @@
     </div>
   -->
 
-  <div id="divBtn">
-    <button class="button canalBtn" id="canalBtn" onclick="selecionarCanal()">
-      <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      fill="currentColor"
-      class="bi bi-arrow-repeat"
-      viewBox="0 0 16 16"
-    >
-      <path
-        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
-      ></path>
-      <path
-        fill-rule="evenodd"
-        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
-      ></path>
-    </svg>
-    Selecionar Canal
-   </button>
-  </div>
+    <div id="divBtn">
+      <a href="#iframeCanal" class="aBtn">
+        <button
+          class="button canalBtn"
+          id="canalBtn"
+          onclick="selecionarCanal()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-repeat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+            ></path>
+          </svg>
+          Selecionar Canal
+        </button>
+      </a>
+    </div>
     <div id="divFilme">
-      <iframe
-        id="iframeCanal"
-        src=""
-        frameborder="0"
-        allowfullscreen
+      <iframe id="iframeCanal"
+      src=""
+      frameborder="0"
+      allowfullscreen
+      style="background-image: url(./img/tvchannels.jpg);"
       >
+
       </iframe>
     </div>
 
