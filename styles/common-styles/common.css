@@ -128,22 +128,26 @@ p {
 }
 
 /******************* MEDIA QUERY ************************************/
-
-/* Telefones em paisagem e abaixo */
-@media (max-width: 480px) {
-  #header {
-    height: 10vh;
-  }
-  .lottieIcon {
-    width: 30px;
-    height: 30px;
-  }
-
-  #titulo {
-    font-size: 1.8rem;
-  }
+/* Desktop grande */
+@media (min-width: 1200px) {
+  /* estilos aqui */
 }
 
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #header {
+    height: 15vh;
+  }
+
+  .lottieIcon {
+    width: 60px;
+    height: 60px;
+  }
+  p {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+}
 /* Telefones em paisagem a tablet em retrato */
 @media (max-width: 767px) {
   #header {
@@ -154,41 +158,85 @@ p {
     width: 40px;
     height: 40px;
   }
-  
+
   #titulo {
     font-size: 2rem;
   }
 
-  .centerMenu {
-    font-size: 1rem;
-    margin-top: 10px;
-
-  }
-
-  p{
+  p {
     font-size: 0.8rem;
     padding: 0 15px;
   }
+
+  .centerMenu {
+    justify-content: space-between;
+    margin-top: 8px;
+  
+  }
+
+  .centerMenu li a {
+    font-size: 1rem;
+    padding: 6px;
+    
+
+  }
 }
 
-/* Tablet em retrato a paisagem e desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-    #header {
-        height: 15vh;
-      }
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+  #header {
+    height: 10vh;
+  }
+  .lottieIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  #titulo {
+    font-size: 1.8rem;
+  }
+
+  .centerMenu {
+    justify-content: space-between;
+    margin-top: 8px;
+  
+  }
+
+  .centerMenu li a {
+    font-size: 0.8rem;
+    padding: 6px;
     
-      .lottieIcon {
-        width: 60px;
-        height: 60px;
-      }
-      p{
-        font-size: 0.9rem;
-        padding: 0 15px;
-    
-      }
+
+  }
 }
 
-/* Desktop grande */
-@media (min-width: 1200px) {
-  /* estilos aqui */
+@media (max-width: 340px) {
+
+  #titulo {
+    font-size: 1.4rem;
+  }
+
+  .centerMenu li a {
+    font-size: 0.6rem;
+    padding: 0 6px 0 3px;
+  
+  }
+  
 }
+
+@media (max-width: 240px) {
+
+  #titulo {
+    font-size: 1.4rem;
+  }
+
+  .centerMenu li a {
+    font-size: 0.48rem;
+    padding: 0 6px 0 3px;
+  
+  }
+  
+}
+
+
