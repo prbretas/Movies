@@ -8,6 +8,16 @@ body {
   padding-bottom: 100px;
 }
 
+#iframePlutoTV, #iframeCanal{
+  background-image: url(../img/bgiframe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85vw;
+  height: 92vh;
+  border: 1px solid white;
+}
+
 /********************* SCROLL BARS *******************************/
 
 ::-webkit-scrollbar {
@@ -95,7 +105,7 @@ p {
   margin: 0 10px;
 }
 
-.capaFilme {
+.imgFilme {
   border: 2px solid white;
   margin: 5px 10px;
   min-width: 35px;
@@ -104,7 +114,7 @@ p {
   border-radius: 3px;
 }
 
-.capaFilme:hover {
+.imgFilme:hover {
   scale: 1.1;
   filter: drop-shadow(0 0 5px rgb(255, 255, 255));
 }
@@ -117,7 +127,7 @@ p {
   justify-content: space-evenly;
 }
 
-#iframeFilme {
+#iframeFilme , #iframeSeries{
   background-image: url(../../img/bgiframe.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -130,9 +140,7 @@ p {
 /******************* MEDIA QUERY ************************************/
 /* Desktop grande */
 @media (min-width: 1200px) {
-  /* estilos aqui */
 }
-
 /* Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   #header {
@@ -147,9 +155,12 @@ p {
     font-size: 0.9rem;
     padding: 0 15px;
   }
+  #iframeFilme, #iframePlutoTV, #iframeCanal{
+    height: 55vh;
+  }
 }
 /* Telefones em paisagem a tablet em retrato */
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
   #header {
     height: 12vh;
   }
@@ -180,10 +191,14 @@ p {
     
 
   }
-}
 
+  #iframeFilme, #iframePlutoTV, #iframeCanal{
+    height: 50vh;
+  }
+
+}
 /* Telefones em paisagem e abaixo */
-@media (max-width: 480px) {
+@media (min-width: 341px) and (max-width: 480px) {
   #header {
     height: 10vh;
   }
@@ -206,12 +221,14 @@ p {
   .centerMenu li a {
     font-size: 0.8rem;
     padding: 6px;
-    
 
   }
+  #iframeFilme, #iframePlutoTV, #iframeCanal{
+    height: 45vh;
+  }
 }
-
-@media (max-width: 340px) {
+/* Telefones abaixo de 340 a 240px*/
+@media (min-width: 241px) and (max-width: 340px) {
 
   #titulo {
     font-size: 1.4rem;
@@ -223,8 +240,10 @@ p {
   
   }
   
+  #iframeFilme,#iframePlutoTV, #iframeCanal{
+    height: 25vh;
+  }
 }
-
 @media (max-width: 240px) {
 
   #titulo {
@@ -235,6 +254,9 @@ p {
     font-size: 0.48rem;
     padding: 0 6px 0 3px;
   
+  }
+  #iframeFilme,#iframePlutoTV, #iframeCanal{
+    height: 20vh;
   }
   
 }

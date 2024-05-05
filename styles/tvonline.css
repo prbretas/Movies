@@ -1,12 +1,4 @@
-#iframePlutoTV, #iframeCanal{
-  background-image: url(../img/bgiframe.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 85vw;
-  height: 92vh;
-  border: 1px solid white;
-}
+
 
 #divBtn {
     margin-top: 50px;
