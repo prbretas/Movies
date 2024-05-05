@@ -1,8 +1,3 @@
-let linkFilme1 = document.getElementById("linkFilme1");
-let linkFilme2 = document.getElementById("linkFilme2");
-let linkFilme3 = document.getElementById("linkFilme3");
-let linkFilme4 = document.getElementById("linkFilme4");
-let linkFilme5 = document.getElementById("linkFilme5");
 
 let sourceVideos = [];
 sourceVideos[0] = "https://embedder.net/e/tt0317219/"; //CARROS
@@ -22,7 +17,7 @@ sourceVideos[13] = "https://embedder.net/e/tt28603694/"; //o porteiro
 sourceVideos[14] = "https://embedder.net/e/tt3291150/"; //MERCENARIOS 4
 sourceVideos[15] = "https://embedder.net/e/tt4495098"; //gran turismo
 sourceVideos[16] = "https://www.dailymotion.com/embed/video/x8k4iv6"; //WHEELY
-
+//sourceVideos[17] = "./img/Patrulha Canina O Filme.mp4"; //WHEELY
 
 /*
 https://embedder.net/e/tt3606752/     -   carros 3
@@ -31,60 +26,9 @@ https://embedder.net/e/tt3606752/     -   carros 3
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
 let iframeFilme = document.getElementById("iframeFilme");
 
-function alterarLinkFilme0() {
-  iframeFilme.setAttribute("src", sourceVideos[0]);
-}
-function alterarLinkFilme1() {
-  iframeFilme.setAttribute("src", sourceVideos[1]);
-}
-function alterarLinkFilme2() {
-  iframeFilme.setAttribute("src", sourceVideos[2]);
-}
-function alterarLinkFilme3() {
-  iframeFilme.setAttribute("src", sourceVideos[3]);
-}
-function alterarLinkFilme4() {
-  iframeFilme.setAttribute("src", sourceVideos[4]);
-}
-function alterarLinkFilme5() {
-  iframeFilme.setAttribute("src", sourceVideos[5]);
-}
-function alterarLinkFilme6() {
-  iframeFilme.setAttribute("src", sourceVideos[6]);
-}
-function alterarLinkFilme7() {
-  iframeFilme.setAttribute("src", sourceVideos[7]);
+function alterarLinkFilme(indexFilme) {
+ this.indexFilme = indexFilme
+console.log(indexFilme)
+iframeFilme.setAttribute("src", sourceVideos[indexFilme]);
 }
 
-function alterarLinkFilme8() {
-  iframeFilme.setAttribute("src", sourceVideos[8]);
-}
-
-function alterarLinkFilme9() {
-  iframeFilme.setAttribute("src", sourceVideos[9]);
-}
-
-function alterarLinkFilme10() {
-  iframeFilme.setAttribute("src", sourceVideos[10]);
-}
-
-function alterarLinkFilme11() {
-  iframeFilme.setAttribute("src", sourceVideos[11]);
-}
-function alterarLinkFilme12() {
-  iframeFilme.setAttribute("src", sourceVideos[12]);
-}
-function alterarLinkFilme13() {
-  iframeFilme.setAttribute("src", sourceVideos[13]);
-}
-function alterarLinkFilme14() {
-  iframeFilme.setAttribute("src", sourceVideos[14]);
-}
-
-function alterarLinkFilme15() {
-  iframeFilme.setAttribute("src", sourceVideos[15]);
-}
-
-function alterarLinkFilme16() {
-  iframeFilme.setAttribute("src", sourceVideos[16]);
-}

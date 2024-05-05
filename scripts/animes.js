@@ -1,40 +1,19 @@
 
-let linkFilme1 = document.getElementById("linkFilme1")
-let linkFilme2 = document.getElementById("linkFilme2")
-let linkFilme3 = document.getElementById("linkFilme3")
-let linkFilme4 = document.getElementById("linkFilme4")
-let linkFilme5 = document.getElementById("linkFilme5")
-
 let sourceVideos = [];
-sourceVideos[0] = "https://embed.warezcdn.net/serie/tt0433740"; //SHURATO
-sourceVideos[1] = "https://embed.warezcdn.net/serie/tt0185133"; //YUYU HAKUSHO
-sourceVideos[2] = "https://embed.warezcdn.net/serie/tt0144069"; //SFVII
-sourceVideos[3] = "https://embed.warezcdn.net/serie/tt0161952"; //CDZ
-sourceVideos[4] = "https://embed.warezcdn.net/serie/tt0214341"; //DBZ
+sourceVideos[0] = "https://animesgames.cc/animes/shurato-dublado-todos-os-episodios"; //SHURATO
+sourceVideos[1] = "https://animesgames.cc/animes/yu-yu-hakusho-dublado-todos-os-episodios"; //YUYU HAKUSHO
+sourceVideos[2] = "https://animesgames.cc/animes/street-fighter-ii-victory-todos-os-episodios"; //SFVII
+sourceVideos[3] = "https://animesgames.cc/animes/os-cavaleiros-do-zodiaco-dublado-todos-os-episodios"; //CDZ
+sourceVideos[4] = "https://animesgames.cc/animes/dragon-ball-z-dublado-todos-os-episodios"; //DBZ //sourceVideos[4] = "https://animesonlinecc.to/search/dragon+ball"; //DBZ
+
+
 
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
 let iframeFilme = document.getElementById("iframeFilme")
 
-
-function alterarLinkFilme0(){
-    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0433740")
-}
-function alterarLinkFilme1(){
-    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0185133")
-}
-function alterarLinkFilme2(){
-    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0144069")
-}
-function alterarLinkFilme3(){
-    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0161952")
-}
-function alterarLinkFilme4(){
-    iframeFilme.setAttribute('src', "https://embed.warezcdn.net/serie/tt0214341")
-}
-
-
-
-function alerta()
-{
-    alert("Boa tarde!");
-}
+function alterarLinkFilme(indexFilme) {
+    this.indexFilme = indexFilme
+   console.log(indexFilme)
+   iframeFilme.setAttribute("src", sourceVideos[indexFilme]);
+   }
+   
