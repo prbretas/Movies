@@ -17,7 +17,7 @@
 
   <body>
     <header id="header">
-      <a href="#">
+      <a href="./index.html">
         <lottie-player
           src="https://assets1.lottiefiles.com/packages/lf20_CTaizi.json"
           background="transparent"
@@ -54,7 +54,7 @@
           >
         </li>
         <li>
-          <a title="Assistir Animes Online" class="hover2" href="#">Animes</a>
+          <a title="Assistir Animes Online" class="hover2" href="./animes.html">Animes</a>
         </li>
         <li>
           <a
@@ -82,32 +82,36 @@
 
     <!---------------------- MAIN ------------------------------------->
     <h1 id="titulo">ANIMES</h1>
-    <p style="color: red">Utilize bloqueadores de anúncios.</p>
-    <p>
-      Para ver os demais episódios, clique nos episodios e arraste para o lado
-      ->
+    <p style="color:red; margin-bottom: 50px;">Utilize bloqueadores de anúncios.
+      <br />      Recomendamos o uso do navegador
+      <a href="https://brave.com/pt-br/">Brave</a>
     </p>
+    <!--
+    <p>
+      Para ver os demais episódios, clique nos episodios e arraste para o lado ->
+    </p>
+    -->
 
     <div id="divFilme">
-      <a id="linkFilme1" href="#iframeFilme" onclick="alterarLinkFilme0()"
+      <a id="linkFilme1" href="#iframeFilme" onclick="alterarLinkFilme(0)"
         ><img src="./img/shurato.jpg" alt class="capaFilme"
       /></a>
-      <a id="linkFilme2" href="#iframeFilme" onclick="alterarLinkFilme1()"
+      <a id="linkFilme2" href="#iframeFilme" onclick="alterarLinkFilme(1)"
         ><img src="./img/yuyu-hakusho-art-anime.jpg" alt="" class="capaFilme"
       /></a>
-      <a id="linkFilme3" href="#iframeFilme" onclick="alterarLinkFilme2()"
+      <a id="linkFilme3" href="#iframeFilme" onclick="alterarLinkFilme(2)"
         ><img src="./img/Street-Fighter-Victory.webp" alt="" class="capaFilme"
       /></a>
-      <a id="linkFilme4" href="#iframeFilme" onclick="alterarLinkFilme3()"
+      <a id="linkFilme4" href="#iframeFilme" onclick="alterarLinkFilme(3)"
         ><img src="./img/cavaleiros-do-zodiaco.webp" alt="" class="capaFilme"
       /></a>
-      <a id="linkFilme5" href="#iframeFilme" onclick="alterarLinkFilme4()"
+      <a id="linkFilme5" href="#iframeFilme" onclick="alterarLinkFilme(4)"
         ><img src="./img/Dragon_Ball_Z.webp" alt="" class="capaFilme"
       /></a>
     </div>
 
     <div id="divTelaFilme">
-      <iframe id="iframeFilme" src="" frameborder="0" allowfullscreen> </iframe>
+      <iframe id="iframeFilme" src="https://animesgames.cc/" frameborder="0" allowfullscreen> </iframe>
     </div>
 
     <script src="./scripts/animes.js"></script>

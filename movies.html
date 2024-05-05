@@ -1,69 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEVMovies - FILMES</title>
-    <link rel="stylesheet" href="./styles/movies.css" />
-    <link rel="stylesheet" href="./styles/common-styles/common.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <a href="#">
-        <lottie-player
-          src="https://assets1.lottiefiles.com/packages/lf20_CTaizi.json"
-          background="transparent"
-          speed="1"
-          class="lottieIcon"
-          loop
-          autoplay
-        ></lottie-player>
-      </a>
-      <div class="openTopBar">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
 
-      <ul class="centerMenu">
-        <li>
-          <a
-            title="Filmes e Séries Online"
-            class="hover2 active"
-            href="./index.html"
-            >Início</a
-          >
-        </li>
-        <li>
-          <a title="Assistir Filmes Online" class="hover2" href="#">Filmes</a>
-        </li>
-        <li>
-          <a title="Assistir Séries Online" class="hover2" href="./series.html"
-            >Séries</a
-          >
-        </li>
-        <li>
-          <a title="Assistir Animes Online" class="hover2" href="./animes.html"
-            >Animes</a
-          >
-        </li>
-        <li>
-          <a
-            title="Assistir TV Online"
-            class="menuOption"
-            href="./tvonline.html"
-            >TV Online</a
-          >
-        </li>
-      </ul>
-            <!--<form class="form-inline">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEVMovies - FILMES</title>
+  <link rel="stylesheet" href="./styles/movies.css" />
+  <link rel="stylesheet" href="./styles/common-styles/common.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header id="header">
+    <a href="./index.html">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_CTaizi.json" background="transparent" speed="1"
+        class="lottieIcon" loop autoplay></lottie-player>
+    </a>
+    <div class="openTopBar">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul class="centerMenu">
+      <li>
+        <a title="Filmes e Séries Online" class="hover2 active" href="./index.html">Início</a>
+      </li>
+      <li>
+        <a title="Assistir Filmes Online" class="hover2" href="./movies.html">Filmes</a>
+      </li>
+      <li>
+        <a title="Assistir Séries Online" class="hover2" href="./series.html">Séries</a>
+      </li>
+      <li>
+        <a title="Assistir Animes Online" class="hover2" href="./animes.html">Animes</a>
+      </li>
+      <li>
+        <a title="Assistir TV Online" class="menuOption" href="./tvonline.html">TV Online</a>
+      </li>
+    </ul>
+    <!--<form class="form-inline">
         <input
           class="form-control mr-sm-2"
           type="search"
@@ -75,101 +53,83 @@
           Pesquisar
         </button>
       </form>-->
-    </header>
-    <h1 id="titulo">FILMES</h1>
-    <p style="color:red">Utilize bloqueadores de anúncios.</p>
-    <div id="divFilme">
-      <a id="linkFilme1" href="#iframeFilme" onclick="alterarLinkFilme0()"
-        ><img src="./img/carros 1.jpg" alt class="capaFilme"
-      /></a>
-      <a id="linkFilme2" href="#iframeFilme" onclick="alterarLinkFilme1()"
-        ><img
-          src="./img/carros-2-poster-brazil-small.jpg"
-          alt=""
-          class="capaFilme"
-      /></a>
-      <a id="linkFilme3" href="#iframeFilme" onclick="alterarLinkFilme2()"
-        ><img src="./img/avatar2-poster.jpg" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme4" href="#iframeFilme" onclick="alterarLinkFilme3()"
-        ><img
-          src="./img/JOHN-WICK-Official-Poster-Banner.jpg"
-          alt=""
-          class="capaFilme"
-      /></a>
-      <a id="linkFilme5" href="#iframeFilme" onclick="alterarLinkFilme4()"
-        ><img src="./img/jw2.jpg" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme6" href="#iframeFilme" onclick="alterarLinkFilme5()"
-        ><img src="./img/jw3.jpg" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme7" href="#iframeFilme" onclick="alterarLinkFilme6()"
-        ><img src="./img/jw4.jpg" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme8" href="#iframeFilme" onclick="alterarLinkFilme7()"
-        ><img src="./img/d&D.jpg" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme9" href="#iframeFilme" onclick="alterarLinkFilme8()"
-        ><img src="./img/creed_3.webp" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme10" href="#iframeFilme" onclick="alterarLinkFilme9()"
-        ><img
-          src="./img/poster-shazam-2-furia-dos-deuses.webp"
-          alt=""
-          class="capaFilme"
-      /></a>
-      <a id="linkFilme11" href="#iframeFilme" onclick="alterarLinkFilme10()"
-        ><img src="./img/VEF10.webp" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme12" href="#iframeFilme" onclick="alterarLinkFilme11()"
-        ><img src="./img/CAPA FILME PATO.jpg" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme13" href="#iframeFilme" onclick="alterarLinkFilme12()"
-        ><img
-          src="./img/Patrulha_Canina_-_Um_Filme_Superpoderoso.webp"
-          alt=""
-          class="capaFilme"
-      /></a>
-      <a id="linkFilme14" href="#iframeFilme" onclick="alterarLinkFilme13()"
-        ><img src="./img/o_porteiro_poster.jpg.webp" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme15" href="#iframeFilme" onclick="alterarLinkFilme14()"
-        ><img src="./img/mercenarios4.webp" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme16" href="#iframeFilme" onclick="alterarLinkFilme15()"
-        ><img src="./img/gran-turismo.jpg.webp" alt="" class="capaFilme"
-      /></a>
-      <a id="linkFilme17" href="#iframeFilme" onclick="alterarLinkFilme16()"
-      ><img src="./img/wheely.jpg" alt="" class="capaFilme"
-    /></a>
-    </div>
+  </header>
+  <h1 id="titulo">FILMES</h1>
+  <p style="color: red; margin-bottom: 50px">
+    Utilize bloqueadores de anúncios.
+    <br />
+    Recomendamos o uso do navegador
+    <a href="https://brave.com/pt-br/">Brave</a>
+  </p>
+  <!--
     <div id="divTelaFilme">
-      <iframe id="iframeFilme" src="" frameborder="0" allowfullscreen> </iframe>
+      <iframe id="iframeFilme" src="https://embedder.net/lib/movies" frameborder="0" allowfullscreen> </iframe>
     </div>
-    <script src="./scripts/movies.js" defer></script>
-    <!---------------------BOOTSTRAP SCRIPTS---------------->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <!------------------ SCRIP LOTTIE FILES ANIMATION LOGO -------------------->
-    <script
-      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
-      defer
-    ></script>
-  </body>
+
+https://embedder.net/lib/movies-->
+
+  <div id="divFilme">
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(0)">
+      <img class="imgFilme" src="./img/carros 1.jpg" alt="Carros"/>
+    </a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(1)">
+      <img class="imgFilme" alt="Carros 2" src="./img/carros-2-poster-brazil-small.jpg"/>
+    </a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(2)">
+      <img class="imgFilme" alt="Avatar 2" src="./img/avatar2-poster.jpg" alt=""/>
+    </a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(3)">
+      <img class="imgFilme" alt="John Wick 1" src="./img/JOHN-WICK-Official-Poster-Banner.jpg"/>
+    </a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(4)">
+      <img src="./img/jw2.jpg" class="imgFilme" alt="John Wick 2" />
+    </a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(5)">
+      <img src="./img/jw3.jpg" class="imgFilme" alt="John Wick 3"  />
+    </a>
+    
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(6)"><img src="./img/jw4.jpg" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(7)"><img src="./img/d&D.jpg" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(8)"><img src="./img/creed_3.webp" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(9)"><img
+        src="./img/poster-shazam-2-furia-dos-deuses.webp" alt="" class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(10)"><img src="./img/VEF10.webp" alt=""
+        class="capaFilme" /></a>
+    <a id="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(11)"><img src="./img/CAPA FILME PATO.jpg" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(17)"><img src="./img/patrulhaofilme.jpg" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(12)"><img
+        src="./img/Patrulha_Canina_-_Um_Filme_Superpoderoso.webp" alt="" class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(13)"><img src="./img/o_porteiro_poster.jpg.webp"
+        alt="" class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(14)"><img src="./img/mercenarios4.webp" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(15)"><img src="./img/gran-turismo.jpg.webp" alt=""
+        class="capaFilme" /></a>
+    <a class="linkFilme" href="#iframeFilme" onclick="alterarLinkFilme(16)"><img src="./img/wheely.jpg" alt=""
+        class="capaFilme" /></a>
+  </div>
+  <div id="divTelaFilme">
+    <iframe id="iframeFilme" src="https://embedder.net/lib/movies" frameborder="0" allowfullscreen> </iframe>
+  </div>
+
+  <script src="./scripts/movies.js" defer></script>
+  <!---------------------BOOTSTRAP SCRIPTS---------------->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+    defer></script>
+  <!------------------ SCRIP LOTTIE FILES ANIMATION LOGO -------------------->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+</body>
+
 </html>
