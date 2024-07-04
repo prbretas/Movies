@@ -1,0 +1,32 @@
+@import "./reset.css";
+
+a {
+  font-style: italic;
+  color: aliceblue;
+}
+
+#divLinks {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.linkgm {
+  width: 360px;
+  /*background-color: blue;*/
+}
+.linkgm:hover {
+  color: rgb(0, 136, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/********************** TELA DO FILME **************************/
+#divTelaFilme {
+  margin: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
