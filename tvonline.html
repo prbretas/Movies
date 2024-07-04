@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEVMovies - FILMES</title>
+    <link rel="stylesheet" href="./styles/movies.css" />
+    <link rel="stylesheet" href="./styles/tvonline.css" />
+    <link rel="stylesheet" href="./styles/common-styles/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DEVMovies - FILMES</title>
-  <link rel="stylesheet" href="./styles/movies.css" />
-  <link rel="stylesheet" href="./styles/tvonline.css" />
-  <link rel="stylesheet" href="./styles/common-styles/common.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-</head>
+  <body>
+    <header id="header">
+      <a href="./index.html">
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_CTaizi.json"
+          background="transparent"
+          speed="1"
+          class="lottieIcon"
+          loop
+          autoplay
+        ></lottie-player>
+      </a>
+      <div class="openTopBar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
 
-<body>
-  <header id="header">
-    <a href="./index.html">
-      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_CTaizi.json" background="transparent" speed="1"
-        class="lottieIcon" loop autoplay></lottie-player>
-    </a>
-    <div class="openTopBar">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-
-    <ul class="centerMenu">
-      <li>
-        <a title="Filmes e Séries Online" class="hover2 active" href="./index.html">Início</a>
-      </li>
-      <li>
-        <a title="Assistir Filmes Online" class="hover2" href="./movies.html">Filmes</a>
-      </li>
-      <li>
-        <a title="Assistir Séries Online" class="hover2" href="./series.html">Séries</a>
-      </li>
-      <li>
-        <a title="Assistir Animes Online" class="hover2" href="./animes.html">Animes</a>
-      </li>
-      <li>
-        <a title="Assistir TV Online" class="menuOption" href="./tvonline.html">TV Online</a>
-      </li>
-    </ul>
-    <!--<form class="form-inline">
+      <ul class="centerMenu">
+        <li>
+          <a
+            title="Filmes e Séries Online"
+            class="hover2 active"
+            href="./index.html"
+            >Início</a
+          >
+        </li>
+        <li>
+          <a title="Assistir Filmes Online" class="hover2" href="./movies.html"
+            >Filmes</a
+          >
+        </li>
+        <li>
+          <a title="Assistir Séries Online" class="hover2" href="./series.html"
+            >Séries</a
+          >
+        </li>
+        <li>
+          <a title="Assistir Animes Online" class="hover2" href="./animes.html"
+            >Animes</a
+          >
+        </li>
+        <li>
+          <a
+            title="Assistir TV Online"
+            class="menuOption"
+            href="./tvonline.html"
+            >TV Online</a
+          >
+        </li>
+        <li>
+          <a title="Games" class="menuOption" href="./games.html">Games</a>
+        </li>
+      </ul>
+      <!--<form class="form-inline">
         <input
           class="form-control mr-sm-2"
           type="search"
@@ -54,43 +82,55 @@
           Pesquisar
         </button>
       </form>-->
-  </header>
+    </header>
 
-  <!------------------- TITULO -------------->
-  <h1 id="titulo">TV ONLINE - PLUTO TV</h1>
-  <p style="color: rgb(255, 31, 31)">
-    Utilize bloqueadores de anúncios.
-    <br />
-    Recomendamos o uso do navegador
-    <a href="https://brave.com/pt-br/">Brave</a>
-  </p>
+    <!------------------- TITULO -------------->
+    <h1 id="titulo">TV ONLINE - PLUTO TV</h1>
+    <p style="color: rgb(255, 31, 31)">
+      Utilize bloqueadores de anúncios.
+      <br />
+      Recomendamos o uso do navegador
+      <a href="https://brave.com/pt-br/">Brave</a>
+    </p>
 
-  <!-------------- IFRAME PLUTOTV -------------->
-  <div id="divBtn">
-    <a href="#iframePlutoTV" class="aBtn">
-      <button class="button" id="plutoBtn" onclick="abrirPlutoTv()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat"
-          viewBox="0 0 16 16">
-          <path
-            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z">
-          </path>
-          <path fill-rule="evenodd"
-            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z">
-          </path>
-        </svg>
-        Abrir PlutoTV
-      </button>
-    </a>
-  </div>
-  <div id="divFilme">
-    <div id="divTelaFilme">
-      <iframe id="iframePlutoTV" src="" frameborder="0" allowfullscreen
-        style="background-image: url(./img/bg-plutotv.webp)">
-      </iframe>
+    <!-------------- IFRAME PLUTOTV -------------->
+    <div id="divBtn">
+      <a href="#iframePlutoTV" class="aBtn">
+        <button class="button" id="plutoBtn" onclick="abrirPlutoTv()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-repeat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+            ></path>
+          </svg>
+          Abrir PlutoTV
+        </button>
+      </a>
     </div>
-  </div>
-  <!-------------- IFRAME SUPERTV -------------->
-  <!--<div id="divFilme">
+    <div id="divFilme">
+      <div id="divTelaFilme">
+        <iframe
+          id="iframePlutoTV"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          style="background-image: url(./img/bg-plutotv.webp)"
+        >
+        </iframe>
+      </div>
+    </div>
+    <!-------------- IFRAME SUPERTV -------------->
+    <!--<div id="divFilme">
       <iframe
         id="iframeFilme"
         src=" https://supertvaovivo.co/"
@@ -100,41 +140,69 @@
       </iframe>
     </div>
   -->
-  <!-------------- IFRAME CANAIS -------------->
-  <div id="divBtn">
-    <a href="#iframeCanal" class="aBtn">
-      <button class="button canalBtn" id="canalBtn" onclick="selecionarCanal()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat"
-          viewBox="0 0 16 16">
-          <path
-            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z">
-          </path>
-          <path fill-rule="evenodd"
-            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z">
-          </path>
-        </svg>
-        Selecionar Canal
-      </button>
-    </a>
-  </div>
-  <div id="divFilme">
-    <iframe id="iframeCanal" src="" frameborder="0" allowfullscreen style="background-image: url(./img/tvchannels.jpg)">
-    </iframe>
-  </div>
-  <!------------------------- SCRIPT ------------------->
-  <script defer src="./scripts/tvonline.js"></script>
-  <!---------------------BOOTSTRAP SCRIPTS---------------->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
-    defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
-    defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
-    defer></script>
-  <!------------------ SCRIP LOTTIE FILES ANIMATION LOGO -------------------->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
-</body>
-
+    <!-------------- IFRAME CANAIS -------------->
+    <div id="divBtn">
+      <a href="#iframeCanal" class="aBtn">
+        <button
+          class="button canalBtn"
+          id="canalBtn"
+          onclick="selecionarCanal()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-repeat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+            ></path>
+          </svg>
+          Selecionar Canal
+        </button>
+      </a>
+    </div>
+    <div id="divFilme">
+      <iframe
+        id="iframeCanal"
+        src=""
+        frameborder="0"
+        allowfullscreen
+        style="background-image: url(./img/tvchannels.jpg)"
+      >
+      </iframe>
+    </div>
+    <!------------------------- SCRIPT ------------------->
+    <script defer src="./scripts/tvonline.js"></script>
+    <!---------------------BOOTSTRAP SCRIPTS---------------->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!------------------ SCRIP LOTTIE FILES ANIMATION LOGO -------------------->
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+      defer
+    ></script>
+  </body>
 </html>
