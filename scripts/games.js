@@ -1,12 +1,12 @@
-let iframeFilme = document.getElementById("iframeFilme")
+let iframeGame = document.getElementById("iframeFilme")
 
-let sourceVideos = [];
-sourceVideos[0] = "https://coolrom.com.au"; //PLUTOTV
-sourceVideos[1] = "https://www.myabandonware.com"; //MENU CANAIS
-sourceVideos[2] = "https://www.retrogames.cc/"; //SUPERTV
+let srcLinks = [];
+srcLinks[0] = "https://coolrom.com.au"; //cool room
+srcLinks[1] = "https://www.myabandonware.com"; //My Abandonware
+srcLinks[2] = "https://www.retrogames.cc/"; //retrogames
 
 function altGameLink(){
-  iframeFilme.setAttribute("src", sourceVideos[0]);
+  iframeGame.setAttribute("src", srcLinks[0]);
 }
 
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
@@ -14,5 +14,5 @@ function altGameLink(){
 function alterarLinkGame(idLinkGame) {
  this.idLinkGame = idLinkGame
 console.log(idLinkGame)
-iframeFilme.setAttribute("src", sourceVideos[idLinkGame]);
+iframeGame.setAttribute("src", srcLinks[idLinkGame]);
 }
