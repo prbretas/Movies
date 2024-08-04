@@ -5,7 +5,7 @@ let plutoBtn = document.getElementById("plutoBtn")
 
 let sourceVideos = [];
 sourceVideos[0] = "https://pluto.tv/pt/live-tv"; //PLUTOTV
-sourceVideos[1] = "https://embedflix.online/tv/"; //MENU CANAIS
+sourceVideos[1] = "https://ultratvonline.org/assistir-hbo-plus-ao-vivo/"; //MENU CANAIS
 sourceVideos[2] = "https://supertvaovivo.co/"; //SUPERTV
 
 function abrirPlutoTv(){
