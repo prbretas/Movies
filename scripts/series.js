@@ -12,6 +12,7 @@ sourceVideos[8] = "https://embedder.net/v/tt3846626"; //GOT
 sourceVideos[9] = "https://embedder.net/v/tt6486762"; //CONTINENTAL DO MUNDO JOHN WICK
 sourceVideos[10] = "https://embedder.net/v/tt0369179"; //2 AND HALF MAN
 sourceVideos[11] = "https://embedder.net/v/tt12637874"; //FALLOUT
+sourceVideos[12] = "https://www.weekseries.info/series/guardioes-da-floresta"
 //https://www.weekseries.info/series/ed-stafford-contra-todos/
 //https://www.weekseries.info/series/descobrindo-o-egito
 
