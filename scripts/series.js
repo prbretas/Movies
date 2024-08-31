@@ -13,6 +13,8 @@ sourceVideos[9] = "https://embedder.net/v/tt6486762"; //CONTINENTAL DO MUNDO JOH
 sourceVideos[10] = "https://embedder.net/v/tt0369179"; //2 AND HALF MAN
 sourceVideos[11] = "https://embedder.net/v/tt12637874"; //FALLOUT
 sourceVideos[12] = "https://www.weekseries.info/series/guardioes-da-floresta"
+sourceVideos[13] = "https://mflix.sh/"
+sourceVideos[14] = "https://www.weekseries.info/"
 //https://www.weekseries.info/series/ed-stafford-contra-todos/
 //https://www.weekseries.info/series/descobrindo-o-egito
 
